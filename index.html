@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+      <link rel="stylesheet" href="css/styles.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+       <script src="js/jquery-2.0.3.min.js"></script>
+       <script src="js/script.js"></script>
+   </head>
+   <body>
+      <div class="navbar">
+         <div class="topnav" id="myTopnav">
+            <a href="#"><span class="fa fa-home"></span> Home</a>
+            <a href="#"><span class="fa fa-bell"></span> Notifications</a>
+            <a href="#"><span class="fa fa-envelope"></span> Messages</a>
+         </div>
+         <div class="logo">
+            <a href="#"><span class="fa fa-twitter"></span></a>
+         </div>
+         <div class="topnav-end">
+            <input type="text" placeholder="Search Twitter">
+            <img class="profilepic" src="img/alagoon.jpg">
+            <button class="tweet-button">
+            <span>Tweet</span>
+            </button>
+         </div>
+      </div>
+      <div id="page-container">
+         <div id="left">
+            <div class="dashboard-left">
+               <div class="dashboardProfileCard">
+                  <div class="coverpic">
+                     <img src="img/coverpic.jpg"></img>
+                  </div>
+                  <div class="dashboardProfileCardcontent">
+                     <a class="" href="/">
+                     <img class="avatar profilepic" src="img/alagoon.jpg" alt="">
+                     </a>
+                     <div>
+                        <div>
+                           <a  id = "username" href="/#">Jamie Lannister</a><span></span>
+                        </div>
+                        <span class="userid">
+                        <a href="/#">@manishsingh2207</a>
+                        </span>
+                     </div>
+                     <div class="profileCardStats">
+                        <a href="/#">
+                           <div>
+                              <div class="profileCardStatskey">
+                                 Tweets
+                              </div>
+                              <div class="profileCardStatsvalue" id="tweets">
+                                 13
+                              </div>
+                           </div>
+                        </a>
+                        <a href="/#">
+                           <div>
+                              <div class="profileCardStatskey">Following</div>
+                              <div class="profileCardStatsvalue" id="following">22</div>
+                           </div>
+                        </a>
+                        <a href="">
+                           <div>
+                              <div class="profileCardStatskey" >Followers</div>
+                              <div class="profileCardStatsvalue" id="followers">8</div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="trends">
+                  <div id="trendhead">
+                     <span>
+                        <h3>Trends for you</h3>
+                        .
+                        <a href="#" id="trendhead-change">Change</a>
+                     </span>
+                  </div>
+                  <div>
+                     <ul class="trend-items">
+                        <li class="trendhashtag">
+                           <a>
+                           <span>#SyeRaaNarasimhaReddy</span>
+                           </a>
+                        </li>
+                        <li class="trendhashtag">
+                           <a  href="" >
+                           <span>#FIFATrophyExperience</span>
+                           </a>
+                        </li>
+                        <li class="trendhashtag">
+                           <a  href="" >
+                           <span>#asdasdasdwaaedsac</span>
+                           </a>
+                        </li>
+                        <li class="trendhashtag">
+                           <a  href="" >
+                           <span>#asdasdasasdasdasd</span>
+                           </a>
+                        </li>
+                        <li class="trendhashtag">
+                           <a  href="" >
+                           <span>#asdwqefdasfasfas</span>
+                           </a>
+                        </li>
+                        <li class="trendhashtag">
+                           <a  href="" >
+                           <span>#sadwqdasdasdasdasd</span>
+                           </a>
+                        </li>
+                        <li class="trendhashtag">
+                           <a  href="" >
+                           <span>#asdwadasdcsadcsadasd</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="center">
+            <div id="dashboard">
+               <div id="profile-summary">
+                  <div class="content">
+                     <img class='avatar profilepic' src='img/alagoon.jpg' />
+                  </div>
+               </div>
+               <div id="tweet-content">
+                  <textarea class="tweet-compose" id="tweet-compose" placeholder="What's happening?"/></textarea>
+               </div>
+            </div>
+            <div id="main">
+               <h2>Tweets</h2>
+               <div id="stream">
+                  <div class="tweet">
+                     <div class="content">
+                        <img class="avatar" src="img/damenleeturks.jpg" />
+                        <strong class="fullname">My BFF</strong>
+                        <span class="username">@mybff</span>
+                        <p class="tweet-text">Today is an amazing day.</p>
+                        <div class="tweet-actions">
+                           <ul>
+                              <li><i class="fa fa-comments" aria-hidden="true"></i></li>
+                              <li><span class="icon action-retweet"></span> </li>
+                              <li><span class="icon action-favorite"></span> </li>
+                              <li><span class="icon action-more"></span> </li>
+                           </ul>
+                        </div>
+                        <div class="stats">
+                           <div class="time">
+                              1:04 PM - 19 Sep 13
+                           </div>
+                        </div>
+                        <div class="reply">
+                           <img class="avatar profilepic" src="img/alagoon.jpg" />
+                           <textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- .tweet -->
+                  <div class="tweet">
+                     <div class="content">
+                        <img class="avatar" src="img/funwatercat.jpg" />
+                        <strong class="fullname">The Onion</strong>
+                        <span class="username">@theonion</span>
+                        <p class="tweet-text">“I'm able to speak confidently about a wide range of subjects, so it’s probably hard for most women to follow.” http://onion.com/1aWfKwf </p>
+                        <div class="tweet-actions">
+                           <ul>
+                              <li><i class="fa fa-comments" aria-hidden="true"></i></li>
+                              <li><span class="icon action-retweet"></span> </li>
+                              <li><span class="icon action-favorite"></span> </li>
+                              <li><span class="icon action-more"></span> </li>
+                           </ul>
+                        </div>
+                        <div class="stats">
+                           <div class="time">
+                              1:04 PM - 19 Sep 13
+                           </div>
+                        </div>
+                        <div class="reply">
+                           <img class="avatar profilepic" src="img/alagoon.jpg" />
+                           <textarea class="tweet-compose" placeholder="Reply to @theonion"/></textarea>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- .tweet -->
+                  <div class="tweet">
+                     <div class="content">
+                        <img class="avatar" src="img/jennyshen.jpg" />
+                        <strong class="fullname">Harvard Biz Review</strong>
+                        <span class="username">@HarvardBiz</span>
+                        <p class="tweet-text">It is possible to work with a loved one without ruining the relationship http://s.hbr.org/15FDIri </p>
+                        <div class="tweet-actions">
+                           <ul>
+                              <li><i class="fa fa-comments" aria-hidden="true"></i></li>
+                              <li><span class="icon action-retweet"></span> </li>
+                              <li><span class="icon action-favorite"></span> </li>
+                              <li><span class="icon action-more"></span> </li>
+                           </ul>
+                        </div>
+                        <div class="stats">
+                           <div class="time">
+                              1:04 PM - 19 Sep 13
+                           </div>
+                        </div>
+                        <div class="reply">
+                           <img class="avatar profilepic" src="img/alagoon.jpg" />
+                           <textarea class="tweet-compose" placeholder="Reply to @HarvardBiz"/></textarea>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- .tweet -->
+               </div>
+               <!-- #stream -->
+            </div>
+            <!-- #main -->
+         </div>
+         <div id="right">
+            <div id="dashboardright">
+               <div id="follow-div">
+                  <span id="follow-title">Who to follow .</span>
+                  <span id="refresh">Refresh .</span>
+                  <span id="view">View all</span>
+                  <div class="tweet">
+                     <div class="content">
+                        <img class="avatar" src="img/narendramodi.jpg" />
+                        <strong class="fullname">Narendra Modi</strong>
+                        <span class="username">@nModi</span>
+                        <div>
+                           <button type="button" class="follow">
+                           <span>Follow</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tweet">
+                     <div class="content">
+                        <img class="avatar" src="img/trump.jpg" />
+                        <strong class="fullname">Donald Trump</strong>
+                        <span class="username">@dTrump</span>
+                        <div>
+                           <button type="button" class="follow">
+                           <span>Follow</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tweet">
+                     <div class="content">
+                        <img class="avatar" src="img/sachin.jpg" />
+                        <strong class="fullname">Sachin Tendulkar</strong>
+                        <span class="username">@sachin_rt</span>
+                        <div>
+                           <button type="button" class="follow">
+                           <span>Follow</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="about-div">
+                  <ul>
+                     <li class="Footer-item">© 2017 Twitter</li>
+                     <li class="Footer-item"><a class="Footer-link" href="">About</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Help Center</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Terms</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Privacy policy</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Cookies</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Ads info</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Brand</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Blog</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Status</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Apps</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Jobs</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Businesses</a></li>
+                     <li class="Footer-item"><a class="Footer-link" href="">Developers</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- #page-container -->
+   </body>
+</html>
